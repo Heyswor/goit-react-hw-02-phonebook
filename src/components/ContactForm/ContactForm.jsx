@@ -17,13 +17,11 @@ export class ContactForm extends Component {
     });
   };
 
-
   handleSumbmit = e => {
     e.preventDefault();
-      
-    
-    this.props.onSumbit(this.state); 
-        this.reset();
+
+    this.props.onSumbit(this.state);
+    this.reset();
   };
 
   reset = () => {
@@ -71,3 +69,5 @@ export class ContactForm extends Component {
     );
   }
 }
+
+

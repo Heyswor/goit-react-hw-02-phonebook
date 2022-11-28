@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import css from './Contact.module.css';
 
 export const Contact = ({ contact, deleteBtn }) => {
@@ -22,3 +23,8 @@ export const Contact = ({ contact, deleteBtn }) => {
     </>
   );
 };
+
+Contact.propTypes = {
+  contact: PropTypes.array.isRequired,
+  deleteBtn: PropTypes.func.isRequired,
+}
